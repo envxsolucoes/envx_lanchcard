@@ -1,0 +1,19 @@
+{
+  "name": "lanchecard",
+  "version": "1.0.0",
+  "description": "Sistema de Lanchonetes Universitárias - PWA",
+  "main": "index.js",
+  "scripts": {
+    "frontend": "cd app/frontend && npm run dev",
+    "backend": "cd app/backend && npm run start",
+    "dev": "concurrently \"npm run frontend\" \"npm run backend\"",
+    "install:all": "npm install && cd app/frontend && npm install && cd ../backend && npm install",
+    "build": "cd app/frontend && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+} 
